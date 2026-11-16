@@ -1,0 +1,13 @@
+/dist/
+/.build-*/
+/Temp/
+/node_modules/
+.env
+.env.*
+
+# Локальные заказы, рабочие материалы и инструкции
+/работы_заказы/
+/AGENTS.md
+/Documents/
+/Images/
+/Outputs/

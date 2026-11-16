@@ -1,0 +1,109 @@
+@font-face {
+  font-family: Inter;
+  src: url("../assets/fonts/inter.woff2") format("woff2");
+  font-weight: 400 900;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --ink: #103858;
+  --muted: #425f76;
+  --wall: #e8f3fc;
+  --paper: #f5faff;
+  --accent: #24649d;
+  --accent-hover: #184c7b;
+  --below: #d6e9f7;
+  --rule: #b5ccdf;
+  --blue-rule: #9bbbd4;
+  --gutters: clamp(1.125rem, 4.7vw, 5rem);
+  --layout: 80rem;
+  --ease: cubic-bezier(.2, .7, .3, 1);
+  --hover-time: 160ms;
+  font-family: Inter, Arial, sans-serif;
+  font-optical-sizing: auto;
+  background: var(--wall);
+  color: var(--ink);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+h1, h2, h3, p, dl, dd { margin: 0; }
+h1, h2 { letter-spacing: -.045em; line-height: 1.08; overflow-wrap: anywhere; }
+h2 { font-weight: 760; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+[hidden] { display: none !important; }
+
+:focus-visible { outline: 2px solid #224f87; outline-offset: 4px; }
+.wrap { width: min(calc(100% - var(--gutters) * 2), var(--layout)); margin-inline: auto; }
+.icon { flex: 0 0 auto; width: 1.125rem; height: 1.125rem; vertical-align: middle; }
+.skip { position: absolute; z-index: 5; inset: .5rem auto auto .75rem; padding: .75rem 1rem; background: var(--paper); transform: translateY(-200%); }
+.skip:focus { transform: none; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+[id] { scroll-margin-top: 1.25rem; }
+
+.header-inner {
+  min-height: 4.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .5rem 1.1rem;
+  border-bottom: 1px solid var(--ink);
+}
+.brand { display: inline-flex; align-items: center; gap: .65rem; min-height: 2.75rem; width: fit-content; text-decoration: none; font-weight: 760; letter-spacing: -.035em; }
+.brand img { display: block; flex: 0 0 auto; width: 2.75rem; height: 2.75rem; object-fit: contain; mix-blend-mode: multiply; }
+.brand span { line-height: 1.12; }
+.nav { display: flex; align-items: center; justify-content: end; gap: clamp(.5rem, 3vw, 2.75rem); }
+.nav a, .header-contact { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; font-size: .875rem; font-weight: 630; text-decoration: none; }
+.nav a { padding-inline: .3rem; }
+.nav a:hover, .footer a:hover { text-decoration: underline; text-underline-offset: .2em; }
+.header-contact { justify-self: end; gap: .3rem; padding: .45rem .25rem; }
+.header-contact:hover { text-decoration: underline; text-underline-offset: .2em; }
+.header-contact .icon { width: 1rem; height: 1rem; }
+
+.telegram-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  min-height: 3.25rem;
+  padding: .7rem .95rem;
+  border: 1px solid var(--ink);
+  background: var(--accent);
+  color: #fff;
+  font-size: .9375rem;
+  font-weight: 730;
+  line-height: 1.25;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: background-color var(--hover-time);
+}
+.telegram-button:hover, .telegram-button:active { background: var(--accent-hover); }
+
+.document { max-width: 44rem; padding-block: clamp(2.5rem, 8vw, 6rem); }
+.document h1 { font-size: clamp(2.1rem, 4.5vw, 3.75rem); }
+.document h2 { font-size: 1.4rem; margin-bottom: .6rem; }
+.document section { margin-block: 2.15rem; }
+.document p { line-height: 1.6; margin-block: .6rem; }
+.document .document-intro { margin-top: 1rem; font-size: 1.125rem; }
+.document-date { color: var(--muted); }
+.document .telegram-button { width: fit-content; max-width: 100%; }
+
+@media (max-width: 38rem) {
+  .header-inner { min-height: 3.8rem; gap: .45rem; }
+  .nav { gap: clamp(.2rem, 1.8vw, .75rem); }
+  .nav a { font-size: .8125rem; padding-inline: .1rem; }
+  .site .site-header .brand img { width: 1.85rem; height: 1.85rem; }
+  .site .site-header .brand { font-size: .93rem; }
+}
+@media (max-width: 22rem) {
+  .header-inner { grid-template-columns: 1fr; gap: 0; }
+  .nav { justify-content: space-between; border-top: 1px solid var(--rule); }
+  .header-contact { justify-self: start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0s !important; }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "bez-hvostov",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:preview": "node scripts/build.mjs --preview",
+    "preview": "node scripts/preview.mjs",
+    "test": "node --test scripts/directions.test.mjs scripts/seo.test.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

@@ -1,0 +1,162 @@
+.character {
+  grid-area: pet;
+  align-self: end;
+  justify-self: center;
+  width: min(100%, 26rem);
+  min-width: 0;
+  text-align: center;
+}
+.character-art { position: relative; isolation: isolate; margin: 0 auto .3rem; }
+.character-art::before { content: ""; position: absolute; z-index: -1; inset: 22% -2% 7%; border-radius: 50%; background: radial-gradient(ellipse, #ffffffb0, #d9eaf65c 60%, transparent 71%); pointer-events: none; }
+
+.mascot-drawing {
+  position: relative;
+  aspect-ratio: 320 / 355;
+}
+.mascot-drawing::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: auto 5% 4%;
+  height: 1px;
+  background: var(--rule);
+}
+.mascot-drawing > svg { display: block; width: 100%; height: auto; pointer-events: none; }
+.mascot-drawing > svg[data-dressed="economics"] { height: 100%; position: absolute; inset: 0; }
+#hedgehog-body > path:first-child { fill: url(#body-light); }
+#hedgehog-quills > use:first-child { fill: url(#quills-light); }
+[data-costume-slot="front"] { filter: drop-shadow(0 2px 2px #10385824); }
+.mascot-change { filter: drop-shadow(0 5px 4px #24476626); }
+#hedgehog-body > path:first-child { filter: drop-shadow(0 2px 2px #173b5425); }
+#hedgehog-cap { filter: drop-shadow(0 2px 1px #10385818); }
+#it-laptop, #engineering-blueprint, #mathematics-sheet { filter: drop-shadow(0 3px 2px #173d5c24); }
+.mascot-drawing [data-pet] {
+  pointer-events: visiblePainted;
+  cursor: pointer;
+  touch-action: manipulation;
+  outline: none;
+}
+.mascot-drawing [data-pet]:focus-visible { outline: 2px dashed var(--accent); outline-offset: 5px; }
+.mascot-change { transform-box: fill-box; transform-origin: center bottom; }
+[data-costume] { transform-box: fill-box; transform-origin: center bottom; }
+[data-costume-hidden], [data-dressed="law"] .mascot-cap { display: none; }
+[data-costume-exit], [data-costume-slot="effect"], .drawing-line { pointer-events: none; }
+
+.mascot-pupil { transform: translate(var(--gaze-x, 0px), var(--gaze-y, 0px)); }
+[data-dressed="humanities"] #hedgehog-paws > path:first-child { display: none; }
+[data-dressed="economics"] #hedgehog-paws > path:first-child { display: none; }
+[data-dressed="it"] #hedgehog-paws > path:first-child,
+[data-dressed="engineering"] #hedgehog-paws > path:first-child,
+[data-dressed="mathematics"] #hedgehog-paws > path:first-child { display: none; }
+[data-dressed="law"] #hedgehog-quills,
+[data-dressed="law"] #hedgehog-paws > path:first-child { display: none; }
+.law-angry-face, .law-verdict, .law-acquitted-label, .law-guilty-label { opacity: 0; }
+.law-guilty .law-angry-face, .law-guilty .law-guilty-label,
+.law-acquitted .law-acquitted-label { opacity: 1; }
+.is-petting.law-guilty .mascot-happy, .law-guilty .mascot-open,
+.law-guilty #hedgehog-body > path:nth-child(2) { opacity: 0; }
+.law-guilty #hedgehog-eyes .mascot-open { opacity: 1; }
+.is-petting [data-dressed="law"] .law-verdict { animation: law-verdict-in 180ms ease-out 440ms both; }
+@keyframes law-verdict-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+.economics-candle-down { fill: #c56b63; stroke: #a34d48; }
+.economics-candle-up { fill: #4aab79; stroke: #26774e; }
+.economics-rally { opacity: 0; transform-box: fill-box; transform-origin: center bottom; }
+.is-petting .economics-rally { opacity: 1; animation: market-rally 480ms cubic-bezier(.2,.7,.3,1) both; }
+@keyframes market-rally { from { transform: scaleY(.03); opacity: 0; } to { transform: scaleY(1); opacity: 1; } }
+.is-counting #economics-tapping-paw { animation: calculator-tap 4.4s ease-in-out infinite; transform-box: fill-box; transform-origin: right top; }
+@keyframes calculator-tap {
+  0%, 18%, 65%, 100% { transform: rotate(0deg); }
+  36%, 50% { transform: rotate(-7deg); }
+}
+.economics-display-pet { display: none; }
+.economics-calculator-turn { transform-box: fill-box; transform-origin: center; transform: rotate(-7deg); }
+.economics-calculator-front { opacity: 0; }
+.economics-calculator-back { opacity: 1; }
+.is-petting .economics-calculator-turn { animation: calculator-turn 650ms ease-in-out both; }
+.is-petting .economics-calculator-front { opacity: 1; animation: calculator-reveal 650ms steps(1, end) both; }
+.is-petting .economics-calculator-back { opacity: 0; animation: calculator-hide 650ms steps(1, end) both; }
+.is-petting.is-settling .economics-calculator-turn { animation: calculator-turn 420ms ease-in-out reverse both; }
+.is-petting.is-settling .economics-calculator-front { animation: calculator-reveal 420ms steps(1, end) reverse both; }
+.is-petting.is-settling .economics-calculator-back { animation: calculator-hide 420ms steps(1, end) reverse both; }
+.is-petting.is-settling [data-dressed="law"] .law-verdict { animation: law-verdict-out 400ms ease both; }
+@keyframes law-verdict-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes calculator-turn {
+  0% { transform: rotate(-7deg) scaleX(1); }
+  49%, 51% { transform: rotate(-3deg) scaleX(.03); }
+  100% { transform: rotate(0) scaleX(1); }
+}
+@keyframes calculator-reveal { 0%, 49% { opacity: 0; } 50%, 100% { opacity: 1; } }
+@keyframes calculator-hide { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+.is-petting .economics-display-idle { display: none; }
+.is-petting .economics-display-pet { display: inline; }
+.is-reading .mascot-pupil { animation: reading-gaze 7s ease-in-out infinite; }
+@keyframes reading-gaze {
+  0%, 12%, 100% { transform: translate(-3px, 7px); }
+  42%, 52% { transform: translate(3px, 7px); }
+  60%, 70% { transform: translate(-2px, 8px); }
+  90% { transform: translate(2px, 8px); }
+}
+.mascot-head { transform-box: fill-box; transform-origin: 50% 100%; }
+.mascot-cap { transform-box: fill-box; transform-origin: 50% 100%; }
+.mascot-tassel { transform-box: fill-box; transform-origin: 100% 0%; }
+.mascot-open, .mascot-happy, .law-angry-face { transition: opacity 180ms ease; }
+.mascot-happy[opacity="0"] { pointer-events: none; }
+.is-petting .mascot-open { opacity: 0; }
+.is-petting .mascot-happy { opacity: 1; }
+.is-petting .mascot-head { animation: head-pet var(--pet-duration) ease-in-out both; }
+.is-petting .mascot-cap { animation: cap-nod var(--pet-duration) ease-in-out both; }
+.is-petting .mascot-tassel { animation: tassel-swing var(--pet-duration) ease-in-out both; }
+.costume-action { transform-box: fill-box; transform-origin: center; }
+.is-petting .book-page { animation: book-page var(--pet-duration) var(--ease); transform-origin: left bottom; }
+.is-petting .calculator-key { animation: calculator-key var(--pet-duration) var(--ease); }
+.is-petting .ledger { animation: ledger var(--pet-duration) var(--ease); transform-origin: center bottom; }
+.is-petting .code-spark, .is-petting .formula-mark { animation: appear-mark var(--pet-duration) ease-in-out; }
+.is-petting .gavel { animation: gavel-tap var(--pet-duration) var(--ease); transform-origin: right center; }
+.is-petting #law-gavel { animation: judge-strike 960ms ease-in-out both; transform-box: fill-box; transform-origin: 95% 86%; }
+@keyframes judge-strike {
+  0% { transform: rotate(0); }
+  26% { transform: rotate(22deg); }
+  45% { transform: rotate(-32deg); }
+  55% { transform: rotate(-29deg); }
+  100% { transform: rotate(0); }
+}
+.is-petting .drawing-pencil { animation: pencil-draw var(--pet-duration) ease-in-out; transform-origin: 65% 50%; }
+.is-petting .drawing-line { animation: drawing-line var(--pet-duration) var(--ease); stroke-dasharray: 42; }
+.is-petting .formula-pencil { animation: formula-pencil var(--pet-duration) ease-in-out; transform-origin: 55% 60%; }
+@keyframes head-pet {
+  0% { transform: none; }
+  42% { transform: translateY(1.2px); }
+  100% { transform: none; }
+}
+@keyframes cap-nod { 0%, 100% { transform: none; } 40% { transform: translateY(-1.6px); } }
+@keyframes tassel-swing { 0%, 100% { transform: none; } 38% { transform: rotate(-3deg); } 72% { transform: rotate(1deg); } }
+.is-petting .it-cursor { animation: cursor-light var(--pet-duration) linear; }
+.is-petting .economics-coin { animation: coin-nod var(--pet-duration) var(--ease); transform-box: fill-box; transform-origin: center bottom; }
+@keyframes cursor-light { 0%,100% { opacity: 1; } 45% { opacity: .45; } }
+@keyframes coin-nod { 30% { transform: translateY(-3px) rotate(-8deg); } 65% { transform: translateY(0) rotate(3deg); } }
+@keyframes book-page { 0%,100% { transform: none; } 45% { transform: skewY(-2deg) scaleX(.98); } }
+@keyframes calculator-key { 32%, 48% { transform: scale(.72); opacity: .65; } }
+@keyframes ledger { 30% { transform: rotate(2.5deg); } 64% { transform: rotate(-1deg); } }
+@keyframes appear-mark { 0%,100% { opacity: 0; } 32%,76% { opacity: 1; } }
+@keyframes gavel-tap { 22% { transform: rotate(9deg); } 47% { transform: rotate(-19deg); } 62% { transform: rotate(-6deg); } }
+@keyframes pencil-draw { 0%,100% { transform: none; } 40%,60% { transform: rotate(3deg); } }
+@keyframes drawing-line { 22% { opacity: 1; stroke-dashoffset: 42; } 60%, 82% { opacity: 1; stroke-dashoffset: 0; } 100% { opacity: 0; stroke-dashoffset: 0; } }
+@keyframes formula-pencil { 0%,100% { transform: none; } 42%,65% { transform: rotate(-3deg); } }
+
+@media (max-width: 69rem) {
+  .character { width: min(100%, 22rem); align-self: center; }
+}
+@media (max-width: 44rem) {
+  .character { width: min(100%, 19.5rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .is-petting .code-spark, .is-petting .formula-mark, .is-petting .drawing-line { animation: none; opacity: 1; }
+  .is-petting #law-gavel, .is-petting [data-dressed="law"] .law-verdict { animation: none; }
+  .is-petting [data-dressed="law"] .law-verdict { opacity: 1; }
+  .is-petting .economics-calculator-turn, .is-petting .economics-calculator-front, .is-petting .economics-calculator-back { animation: none; }
+  .is-petting .economics-calculator-turn { transform: none; }
+  .is-counting #economics-tapping-paw, .is-petting .economics-rally { animation: none; }
+  .is-petting .calculator-round-key { animation: none; }
+  .is-reading .mascot-pupil { animation: none; }
+  .is-petting .mascot-head, .is-petting .costume-action, .is-petting .mascot-cap, .is-petting .mascot-tassel, .is-petting .it-cursor, .is-petting .economics-coin { animation: none; }
+}

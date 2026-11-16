@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="140 75 320 355">
+  <defs>
+    <radialGradient id="body-light" cx=".34" cy=".25" r=".83"><stop stop-color="#fffef9"/><stop offset=".6" stop-color="#fff9ed"/><stop offset="1" stop-color="#c3d4df"/></radialGradient>
+    <linearGradient id="quills-light" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#ffe393"/><stop offset=".6" stop-color="#f4ca55"/><stop offset="1" stop-color="#dca93d"/></linearGradient>
+    <pattern id="quills-hatch" width="11" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(-18)">
+      <path d="M1 1 8 9M5-2 12 6" fill="none" stroke="#103858" stroke-width=".9" opacity=".55"/>
+    </pattern>
+    <radialGradient id="mascot-shadow"><stop stop-color="#173e60" stop-opacity=".32"/><stop offset=".48" stop-color="#245880" stop-opacity=".15"/><stop offset="1" stop-color="#245880" stop-opacity="0"/></radialGradient>
+    <clipPath id="eye-clip-left"><ellipse cx="259" cy="289" rx="31" ry="32"/></clipPath>
+    <clipPath id="eye-clip-right"><ellipse cx="351" cy="281" rx="31" ry="32"/></clipPath>
+    <path id="quills-shape" d="M207 350 163 335 184 308 152 282 182 266 162.675 233.4 199 226 190.95 190.95 227 200 239.55 156.375 271 181 303.125 143.225 330 180 365.575 156.475 377 197 419.2 185.825 411 224 444.225 232.475 426 263 454 284 428 308 442 335 398 351Z"/>
+    <clipPath id="quills-clip"><use href="#quills-shape"/></clipPath>
+  </defs>
+  <ellipse id="hedgehog-shadow" cx="304" cy="409" rx="120" ry="14" fill="url(#mascot-shadow)"/>
+  <g stroke="#103858" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <g class="mascot-change" data-costume-motion>
+    <g id="hedgehog-head" class="mascot-head" data-pet>
+      <!-- costume:back -->
+      <g id="hedgehog-cap" class="mascot-cap">
+        <path d="m219 159 127-18 13 59q-60 30-132 5Z" fill="#fffdf7" stroke-width="3"/>
+        <path d="m231 174 7 13m0-16 8 16m2-15 6 11m82-21 7 18m-1-26 6 16" stroke-width="1"/>
+        <path d="M171 155 278 99q7-4 15-3l111 14q8 1 3 7l-97 54q-5 3-12 2l-127-8q-9-1 0-10Z" fill="#fffdf7" stroke-width="4.7"/>
+        <path d="M186 149l55-29m47-17 12-3m-2 6 14-4m47 19 21-9m-13 14 25-12m-18 18 25-13m-25 21 20-12m-201 21 12-7m-7 10 16-10m-10 13 14-8m19 8 8-5m0 8 12-7m-5 9 14-8" stroke-width="1.2"/>
+      </g>
+      <g id="hedgehog-quills" transform="translate(303 287) scale(.9) translate(-303 -287)" stroke-linejoin="miter" stroke-miterlimit="4">
+        <use href="#quills-shape" fill="#f5c338" stroke-width="4"/>
+        <use href="#quills-shape" fill="url(#quills-hatch)" stroke="none"/>
+      </g>
+      <g id="hedgehog-cap-front" class="mascot-cap">
+      <g id="hedgehog-tassel" class="mascot-tassel">
+        <path d="M254 119q-40 18-60 63" stroke-width="6"/>
+        <path d="M254 119q-40 18-60 63" stroke="#f5c338" stroke-width="2.8"/>
+        <path d="M191 185q-8 28-30 38l12 1-6 8 13-1-3 7 13-4 5 4 1-16 8 10q-11-21-9-46Z" fill="#f5c338" stroke-width="3"/>
+        <path d="m190 195-11 31m14-25-6 27m7-18 1 13m-11-19-12 17" stroke-width="1.2"/>
+        <ellipse cx="193" cy="182" rx="6" ry="7" transform="rotate(26 193 182)" fill="#f5c338" stroke-width="2.8"/>
+      </g>
+        <ellipse cx="254" cy="119" rx="10" ry="6" transform="rotate(-18 254 119)" fill="#f5c338" stroke-width="3"/>
+      </g>
+      <!-- costume:headwear -->
+      <g id="hedgehog-paws" fill="#fffdf7" stroke-width="4">
+        <path d="M208 333c-7 6-18 23-13 33 6 12 20 5 25-9m166-25c7-4 15-2 20 7 6 12 8 24-1 28-11 5-19-4-20-16"/>
+        <path d="M242 376c-11-1-20 4-17 14 2 9 16 18 24 18 8-1 9-8 7-14m83-15c8-5 20-4 24 3 5 9-6 21-16 23-10 3-19 0-18-7"/>
+      </g>
+      <g id="hedgehog-body">
+        <path d="M218 259c-15-13-31-3-25 13 2 6 8 11 14 12-9 28-7 55 3 76 9 16 24 25 45 30 27 9 64 7 88-3 26-10 42-26 49-51 5-19 6-43 2-65 13-2 14-16 8-24-6-8-15-7-22-1-14-23-40-39-70-41-39-4-73 14-92 54Z" fill="#fffdf7" stroke-width="4.5"/>
+        <path d="M255 245q6-7 13-2m70-5q7-5 14 1" stroke-width="3.7"/>
+      </g>
+      <!-- costume:body -->
+      <g id="hedgehog-eyes">
+        <ellipse cx="259" cy="289" rx="31" ry="32" fill="#fffdf7" stroke="none"/>
+        <ellipse cx="351" cy="281" rx="31" ry="32" fill="#fffdf7" stroke="none"/>
+        <g class="mascot-open">
+          <g clip-path="url(#eye-clip-left)"><g class="mascot-pupil" stroke="none">
+            <ellipse cx="263" cy="290" rx="11.5" ry="15" fill="#103858"/><ellipse cx="260" cy="283" rx="3" ry="4" fill="#fffdf7"/>
+          </g></g>
+          <g clip-path="url(#eye-clip-right)"><g class="mascot-pupil" stroke="none">
+            <ellipse cx="346" cy="282" rx="11.5" ry="15" fill="#103858"/><ellipse cx="343" cy="275" rx="3" ry="4" fill="#fffdf7"/>
+          </g></g>
+        </g>
+        <path class="mascot-happy" d="M246 291q15-19 29-1m58-7q14-18 28-1" stroke-width="4" opacity="0"/>
+      </g>
+      <g id="hedgehog-glasses" stroke-width="5.5">
+        <ellipse cx="259" cy="289" rx="35" ry="35"/><ellipse cx="351" cy="281" rx="35" ry="35"/>
+        <path d="M294 285q10-8 22-1M224 287l-21-15m183 2 12-17"/>
+      </g>
+      <g id="hedgehog-ears" stroke-width="4.5">
+        <path d="M218 259c-15-13-31-3-25 13 2 6 8 11 14 12l4-15Z" fill="#fffdf7" stroke="none"/>
+        <path d="M218 259c-15-13-31-3-25 13 2 6 8 11 14 12"/>
+        <path d="M380 246c7-6 16-7 22 1 6 8 5 22-8 24l-9-10Z" fill="#fffdf7" stroke="none"/>
+        <path d="M380 246c7-6 16-7 22 1 6 8 5 22-8 24"/>
+        <path d="M201 270q0-8 8-5m179-13q5-5 9 0" stroke-width="3.7"/>
+      </g>
+      <ellipse cx="306" cy="311" rx="11" ry="7" fill="#103858" stroke-width="2"/>
+      <ellipse cx="303" cy="308" rx="3" ry="1.5" fill="#fffdf7" stroke="none"/>
+      <path class="mascot-open" d="M287 328q17 18 36-5" stroke-width="4.5"/>
+      <path class="mascot-happy" d="M286 326q20 12 40-3c-3 24-27 30-40 3Z" fill="#e4a28c" stroke-width="3.5" opacity="0"/>
+      <!-- costume:front -->
+      <!-- costume:effect -->
+    </g>
+    </g>
+  </g>
+</svg>

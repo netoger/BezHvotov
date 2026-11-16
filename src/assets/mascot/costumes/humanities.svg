@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="140 75 320 355">
+  <g data-slot="back">
+    <g transform="rotate(1 408.5 413)" stroke-width="1.5">
+      <path d="M375 399h68l4 3v9l-4 3H375q-5-2-5-7.0t5-7.0Z" fill="#689799"/>
+      <path d="M376 402h66v8H376q-4-4.0 0-8Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M380 404h57m-57 3h54" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M375 399q-5 7.0 0 14m3-13h63" stroke="#103858" stroke-width="1.1"/>
+      <path d="M380 412h57" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(-1 410.0 399)" stroke-width="1.5">
+      <path d="M379 385h63l4 3v9l-4 3H379q-5-2-5-7.0t5-7.0Z" fill="#a87863"/>
+      <path d="M380 388h61v8H380q-4-4.0 0-8Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M384 390h52m-52 3h49" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M379 385q-5 7.0 0 14m3-13h58" stroke="#103858" stroke-width="1.1"/>
+      <path d="M384 398h52" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(1 416.5 385)" stroke-width="1.5">
+      <path d="M383 371h68l4 3v9l-4 3H383q-5-2-5-7.0t5-7.0Z" fill="#d7b76e"/>
+      <path d="M384 374h66v8H384q-4-4.0 0-8Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M388 376h57m-57 3h54" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M383 371q-5 7.0 0 14m3-13h63" stroke="#103858" stroke-width="1.1"/>
+      <path d="M388 384h57" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(-1 406.0 371)" stroke-width="1.5">
+      <path d="M375 357h63l4 3v9l-4 3H375q-5-2-5-7.0t5-7.0Z" fill="#75849f"/>
+      <path d="M376 360h61v8H376q-4-4.0 0-8Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M380 362h52m-52 3h49" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M375 357q-5 7.0 0 14m3-13h58" stroke="#103858" stroke-width="1.1"/>
+      <path d="M380 370h52" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(1 412.5 357)" stroke-width="1.5">
+      <path d="M379 343h68l4 3v9l-4 3H379q-5-2-5-7.0t5-7.0Z" fill="#a96c65"/>
+      <path d="M380 346h66v8H380q-4-4.0 0-8Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M384 348h57m-57 3h54" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M379 343q-5 7.0 0 14m3-13h63" stroke="#103858" stroke-width="1.1"/>
+      <path d="M384 356h57" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(-1 414.0 343)" stroke-width="1.5">
+      <path d="M383 329h63l4 3v9l-4 3H383q-5-2-5-7.0t5-7.0Z" fill="#8b9b78"/>
+      <path d="M384 332h61v8H384q-4-4.0 0-8Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M388 334h52m-52 3h49" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M383 329q-5 7.0 0 14m3-13h58" stroke="#103858" stroke-width="1.1"/>
+      <path d="M388 342h52" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(1 408.5 329)" stroke-width="1.5">
+      <path d="M375 315h68l4 3v9l-4 3H375q-5-2-5-7.0t5-7.0Z" fill="#607e9d"/>
+      <path d="M376 318h66v8H376q-4-4.0 0-8Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M380 320h57m-57 3h54" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M375 315q-5 7.0 0 14m3-13h63" stroke="#103858" stroke-width="1.1"/>
+      <path d="M380 328h57" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(8 425 314)" stroke-width="1.5">
+      <path d="M405 314v-57q9-4 18 0v57Z" fill="#9b6059"/>
+      <path d="M424 314v-64q10-4 20 0v64Z" fill="#638c92"/>
+      <path d="M408 266h12m-12 36h12m7-43h14m-14 41h14" stroke="#edce8d" stroke-width="1.3"/>
+      <path d="M412 276v16m22-21v18" stroke="#efddae" stroke-width="1"/>
+    </g>
+  </g>
+  <g data-slot="front">
+    <defs>
+      <linearGradient id="humanities-cover" x2="0" y2="1"><stop stop-color="#ae6d5f"/><stop offset="1" stop-color="#713e3c"/></linearGradient>
+      <linearGradient id="humanities-paper" x2="1" y2="0"><stop stop-color="#fffdf3"/><stop offset="1" stop-color="#e5d4b3"/></linearGradient>
+      <linearGradient id="humanities-ink" x2="1" y2="1"><stop stop-color="#6c8d9f"/><stop offset=".5" stop-color="#254b65"/><stop offset="1" stop-color="#142e49"/></linearGradient>
+    </defs>
+    <g id="humanities-stack-left">
+    <g transform="rotate(0 185.0 414)" stroke-width="1.5">
+      <path d="M153 401h65l4 3v8l-4 3H153q-5-2-5-6.5t5-6.5Z" fill="#c1a05b"/>
+      <path d="M154 404h63v7H154q-4-3.5 0-7Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M158 406h54m-54 3h51" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M153 401q-5 6.5 0 13m3-12h60" stroke="#103858" stroke-width="1.1"/>
+      <path d="M158 413h54" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(-2 185.5 401)" stroke-width="1.5">
+      <path d="M157 388h58l4 3v8l-4 3H157q-5-2-5-6.5t5-6.5Z" fill="#688c9a"/>
+      <path d="M158 391h56v7H158q-4-3.5 0-7Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M162 393h47m-47 3h44" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M157 388q-5 6.5 0 13m3-12h53" stroke="#103858" stroke-width="1.1"/>
+      <path d="M162 400h47" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(1 185.0 388)" stroke-width="1.5">
+      <path d="M154 375h63l4 3v8l-4 3H154q-5-2-5-6.5t5-6.5Z" fill="#a86861"/>
+      <path d="M155 378h61v7H155q-4-3.5 0-7Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M159 380h52m-52 3h49" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M154 375q-5 6.5 0 13m3-12h58" stroke="#103858" stroke-width="1.1"/>
+      <path d="M159 387h52" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(-1 187.5 375)" stroke-width="1.5">
+      <path d="M159 362h58l4 3v8l-4 3H159q-5-2-5-6.5t5-6.5Z" fill="#79947b"/>
+      <path d="M160 365h56v7H160q-4-3.5 0-7Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M164 367h47m-47 3h44" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M159 362q-5 6.5 0 13m3-12h53" stroke="#103858" stroke-width="1.1"/>
+      <path d="M164 374h47" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(1 185.5 362)" stroke-width="1.5">
+      <path d="M156 349h60l4 3v8l-4 3H156q-5-2-5-6.5t5-6.5Z" fill="#596f91"/>
+      <path d="M157 352h58v7H157q-4-3.5 0-7Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M161 354h49m-49 3h46" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M156 349q-5 6.5 0 13m3-12h55" stroke="#103858" stroke-width="1.1"/>
+      <path d="M161 361h49" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    </g>
+    <g id="humanities-stack-right">
+    <g transform="rotate(0 419.0 414)" stroke-width="1.5">
+      <path d="M389 401h61l4 3v8l-4 3H389q-5-2-5-6.5t5-6.5Z" fill="#658a94"/>
+      <path d="M390 404h59v7H390q-4-3.5 0-7Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M394 406h50m-50 3h47" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M389 401q-5 6.5 0 13m3-12h56" stroke="#103858" stroke-width="1.1"/>
+      <path d="M394 413h50" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(-1 419.5 401)" stroke-width="1.5">
+      <path d="M393 388h54l4 3v8l-4 3H393q-5-2-5-6.5t5-6.5Z" fill="#ae8063"/>
+      <path d="M394 391h52v7H394q-4-3.5 0-7Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M398 393h43m-43 3h40" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M393 388q-5 6.5 0 13m3-12h49" stroke="#103858" stroke-width="1.1"/>
+      <path d="M398 400h43" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(1 419.5 388)" stroke-width="1.5">
+      <path d="M390 375h60l4 3v8l-4 3H390q-5-2-5-6.5t5-6.5Z" fill="#a17a88"/>
+      <path d="M391 378h58v7H391q-4-3.5 0-7Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M395 380h49m-49 3h46" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M390 375q-5 6.5 0 13m3-12h55" stroke="#103858" stroke-width="1.1"/>
+      <path d="M395 387h49" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    <g transform="rotate(0 420.5 375)" stroke-width="1.5">
+      <path d="M394 362h54l4 3v8l-4 3H394q-5-2-5-6.5t5-6.5Z" fill="#c6ac70"/>
+      <path d="M395 365h52v7H395q-4-3.5 0-7Z" fill="#f7eed9" stroke-width=".8"/>
+      <path d="M399 367h43m-43 3h40" stroke="#c5b493" stroke-width=".55"/>
+      <path d="M394 362q-5 6.5 0 13m3-12h49" stroke="#103858" stroke-width="1.1"/>
+      <path d="M399 374h43" stroke="#fff8de" stroke-width=".6" opacity=".6"/>
+    </g>
+    </g>
+    <g id="humanities-inkwell" stroke-width="1.7">
+      <path d="M410 351q-8 4-7 14l2 9q14 6 28 0l2-9q1-10-8-14Z" fill="url(#humanities-ink)"/>
+      <path d="M410 347h18v8q-9 4-18 0Z" fill="#c7ac77"/>
+      <ellipse cx="419" cy="347" rx="9" ry="3" fill="#172f48"/>
+      <path d="M408 361v7m4-11v4" stroke="#c9e0e5" stroke-width="1.6"/>
+      <path d="m415 367 9 0" stroke="#e6c486" stroke-width="1.5"/>
+    </g>
+    <g id="humanities-quill" stroke-width="1.5">
+      <path d="M420 343q-7-28 24-55 7 33-24 55Z" fill="#f6ead2"/>
+      <path d="m418 351 25-58m-20 43 9-5m-6-3 10-6m-7-2 10-6m-8-2 10-5m-18 20-2-8m5 1-2-9" stroke="#9a8d77" stroke-width=".9"/>
+      <path d="m418 351 4-11" stroke-width="1.5"/>
+    </g>
+    <g id="humanities-book" stroke-width="2.5">
+      <path d="M226 344q39-9 76 10 31-22 66-19l12 47q-36 3-76 21-43-16-79-15Z" fill="url(#humanities-cover)"/>
+      <path d="M230 343q37-10 71 10l3 43q-38-17-75-16Z" fill="url(#humanities-paper)"/>
+      <path d="M301 353q30-22 64-21l10 43q-40 5-71 21Z" fill="#e9dcc2"/>
+      <g id="humanities-page" class="costume-action book-page">
+        <path d="M301 353q29-25 62-23l6 42q-35 7-65 24Z" fill="#fffaf0"/>
+        <path d="M313 355q16-12 38-15m-37 22q18-11 40-15m-40 22q20-12 39-15m-37 21 27-11" stroke="#91a0a4" stroke-width="1.1"/>
+      </g>
+      <path d="M241 351q20-4 46 8m-46-1q21-3 46 8m-46-1q21-2 45 8m-44-1 29 5" stroke="#91a0a4" stroke-width="1.1"/>
+      <path d="M230 383q39 0 73 16m5-1q33-17 65-19" stroke="#f3ddb1" stroke-width="1"/>
+      <path d="M301 388v20l5-5 5 5-3-22" fill="#aa6659" stroke-width="1.1"/>
+      <g id="humanities-reading-arms" fill="#fffaf0" stroke-width="2.8">
+        <path d="M224 352C215 345 206 352 208 363C210 372 223 377 232 374C237 372 236 366 231 364L226 362C231 363 234 360 232 357C230 354 227 353 224 352Z"/>
+        <path d="M376 347C385 340 394 347 392 358C390 367 377 372 368 369C363 367 364 361 369 359L374 357C369 358 366 355 368 352C370 349 373 348 376 347Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
